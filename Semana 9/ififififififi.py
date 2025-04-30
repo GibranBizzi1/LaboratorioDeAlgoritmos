@@ -16,7 +16,7 @@ for n in range (1,16):
     idade = int(input("Digite sua idade"))
     
     if idade > maioridade:
-    maioridade = idade
+        maioridade = idade
 
     if sexo == "F" and idade >= 18 and idade <= 35 and cordoseyes == "V" and cordohair == "L":
         mulherescond += 1
@@ -24,7 +24,7 @@ for n in range (1,16):
     if cordohair == "L":
         loiro += 1
     elif cordohair == "C":
-        olhcastanho += 1
+        cabcastanho += 1
     elif cordohair == "P":
         cabpreto += 1
     
