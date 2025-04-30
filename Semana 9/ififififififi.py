@@ -14,11 +14,9 @@ for n in range (1,16):
     cordoseyes = input("Digite a cor do seus olhos:A (azuis), V (verdes) e C (castanhos)").upper()
     cordohair = input("Digite a cor do seu cabelo:L (loiros), C (castanhos) e P (pretos)").upper()
     idade = int(input("Digite sua idade"))
-    if n == 1:
-        maioridade = maioridade
-    else:
-        if idade > maioridade:
-            maioridade = idade
+    
+    if idade > maioridade:
+    maioridade = idade
 
     if sexo == "F" and idade >= 18 and idade <= 35 and cordoseyes == "V" and cordohair == "L":
         mulherescond += 1
@@ -47,7 +45,7 @@ print ("A maioridade do grupo é:", maioridade)
 print ("A quantidade de mulheres com aquelas especificações é de:", mulherescond)
 print ("A porcentagem de pessoas com olhos azuis é de:", (azul / 15) *100)
 print ("A porcentagem de pessoas com olhos verdes é de:", (verde / 15) *100)
-print ("A porcentagem de pessoas com olhos azuis é de:", (olhcastanho / 15) *100)
+print ("A porcentagem de pessoas com olhos castanhos é de:", (olhcastanho / 15) *100)
 print ("A porcentagem de loiros é de:", (loiro / 15) * 100)
 print ("A porcentagem de castanhos é de:", (cabcastanho / 15) * 100)
 print ("A porcentagem de cabelos pretos é de:", (cabpreto / 15) * 100)
