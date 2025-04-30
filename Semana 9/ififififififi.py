@@ -10,16 +10,15 @@ F = 0
 M = 0
 
 for n in range (1,16):
+    sexo = input("Digite qual seu sexo M ou F").upper()
+    cordoseyes = input("Digite a cor do seus olhos:A (azuis), V (verdes) e C (castanhos)").upper()
+    cordohair = input("Digite a cor do seu cabelo:L (loiros), C (castanhos) e P (pretos)").upper()
+    idade = int(input("Digite sua idade"))
     if n == 1:
         maioridade = maioridade
     else:
         if idade > maioridade:
             maioridade = idade
-        
-    sexo = input("Digite qual seu sexo M ou F").upper()
-    cordoseyes = input("Digite a cor do seus olhos:A (azuis), V (verdes) e C (castanhos)").upper()
-    cordohair = input("Digite a cor do seu cabelo:L (loiros), C (castanhos) e P (pretos)").upper()
-    idade = int(input("Digite sua idade"))
 
     if sexo == "F" and idade >= 18 and idade <= 35 and cordoseyes == "V" and cordohair == "L":
         mulherescond += 1
